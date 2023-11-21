@@ -26,7 +26,7 @@
             height: 100px;
         }
         .contenedor-logo{
-            padding-left:10rem;
+            padding-left:9rem;
     
         }
         .contenedor-menu{
