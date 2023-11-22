@@ -1,0 +1,97 @@
+ body {
+     font-family: Arial, sans-serif;
+     background-color: rgba(0, 0, 0, 0.832);
+     background-repeat: no-repeat;
+     background-size: cover;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     height: 100vh;
+     margin: 0;
+ }
+
+ .container {
+     background-color: #ffffffc8;
+     padding: 20px;
+     border-radius: 5px;
+     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+     max-width: 400px;
+     width: 100%;
+ }
+
+ h2 {
+     text-align: center;
+ }
+
+ .form-group {
+     margin-bottom: 20px;
+ }
+
+ label {
+     display: block;
+     margin-bottom: 5px;
+ }
+
+ input,
+ select {
+     width: 100%;
+     padding: 8px;
+     font-size: 16px;
+     border: 1px solid #ccc;
+     border-radius: 10px;
+ }
+
+ button {
+     background-color: #007BFF;
+     color: #fff;
+     padding: 10px 20px;
+     font-size: 16px;
+     border: none;
+     border-radius: 20px;
+     cursor: pointer;
+ }
+
+ button[type="submit"] {
+     background-color: #28a745;
+     margin-left: 10px;
+ }
+
+ button[type="submit"]:hover {
+     background-color: #218838;
+ }
+
+ button[type="button"] {
+     background-color: #dc3545;
+ }
+
+ button[type="button"]:hover {
+     background-color: #c82333;
+ }
+
+ #aprendiz-fields,
+ #equipo-fields,
+ #vehiculo-fields {
+     display: none;
+ }
+
+ /* Media Queries para responsive */
+ @media screen and (max-width: 600px) {
+     .container {
+         max-width: 100%;
+     }
+
+     input,
+     select,
+     button {
+         font-size: 14px;
+     }
+ }
+
+ @media screen and (max-width: 400px) {
+
+     input,
+     select,
+     button {
+         font-size: 12px;
+     }
+ }

@@ -1,0 +1,55 @@
+        body {
+            font-family: Arial, sans-serif;
+            background-color: rgba(0, 0, 0, 0.832);
+            margin: 0;
+            padding: 0;
+        }
+
+        h2 {
+            text-align: center;
+            color: #fff;
+            padding: 10px;
+            margin: 0 auto; /* Centrar horizontalmente en la pantalla */
+            width: 80%;
+        }
+
+        table {
+            border-collapse: collapse;
+            width: 80%; /* Menos ancho */
+            background-color: #ffffffc8;;
+            margin: 30px auto; /* Centrar la tabla en la página */
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombra ligera */
+        }
+
+        th, td {
+            border: 1px solid #dddddd;
+            text-align: center;
+            padding: 12px;
+        }
+
+        th {
+            background-color: #ffffffc8;
+            color: black;
+        }
+
+        tr:nth-child(even) {
+            background-color: #f2f2f2;
+        }
+        .action-buttons {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .edit-button, .delete-button {
+            background-color: #007BFF;
+            color: #fff;
+            padding: 8px 16px;
+            border: none;
+            cursor: pointer;
+            margin: 4px;
+        }
+
+        .delete-button {
+            background-color: #dc3545;
+        }
