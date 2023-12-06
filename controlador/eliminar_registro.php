@@ -3,7 +3,7 @@
 if (isset($_GET['id']) && is_numeric($_GET['id'])) {
     $id = $_GET['id'];
 
-    // Realizar la conexión a la base de datos (reemplaza con tus propios datos)
+    // Realizar la conexión a la base de datos
     $servername = "localhost";
     $username = "root";
     $password = "";
