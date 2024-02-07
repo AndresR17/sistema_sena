@@ -11,6 +11,7 @@
 <body>
   <div class="container">
     <!-- Formulario de Registro -->
+    
     <form id="registration-form" action="../controlador/procesar_registro.php" method="post">
         <h2>Formulario de Registro</h2>
         <div class="form-group">

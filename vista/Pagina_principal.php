@@ -15,7 +15,7 @@
         <div class="contenedor-menu">
        <ul>
             <a href="../vista/Pagina_principal.php">Inicio</a>
-            <a href="../vista/Login.php">Iniciar Seción</a>
+            <a href="../vista/Login.php">Manual</a>
             <a href="">SACI</a>
        </ul>
         </div>
