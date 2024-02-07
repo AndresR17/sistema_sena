@@ -89,7 +89,10 @@ $conn->close();
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../estilos/estilos_editar_registro.css">
+    <script src="../scripts/script_editar_registro.js"></script>
     <title>Editar Registro</title>
+
 </head>
 <body>
 <h2>Editar Registro</h2>
@@ -179,115 +182,6 @@ $conn->close();
             <button type="submit">Guardar Cambios</button>
         </div>
     </form>
-
     
-    <style>
-        body {
-    font-family: Arial, sans-serif;
-}
-
-h2 {
-    background-color: #3498db;
-    color: #ffffff;
-    padding: 10px;
-    text-align: center;
-}
-
-form {
-    max-width: 600px;
-    margin: 0 auto;
-    padding: 20px;
-}
-
-.form-group {
-    margin: 10px 0;
-}
-
-label {
-    display: block;
-    font-weight: bold;
-}
-
-input[type="text"],
-select {
-    width: 100%;
-    padding: 10px;
-    margin: 5px 0;
-    border: 1px solid #ccc;
-    border-radius: 3px;
-}
-
-button {
-    background-color: #3498db;
-    color: #ffffff;
-    padding: 10px 20px;
-    border: none;
-    border-radius: 3px;
-    cursor: pointer;
-}
-
-button:hover {
-    background-color: #007cc7;
-}
-
-    </style>
-
-    <script>
-        // Función para mostrar u ocultar campos relacionados con el tipo de roll
-        function showAdditionalFields() {
-            var roll = document.getElementById("roll").value;
-            var aprendizFields = document.getElementById("aprendiz-fields");
-            
-            if (roll === "aprendiz") {
-                aprendizFields.style.display = "block";
-            } else {
-                aprendizFields.style.display = "none";
-            }
-        }
-
-        // Función para mostrar u ocultar campos relacionados con si trae equipo
-        function showEquipmentFields() {
-            var traeEquipo = document.getElementById("trae-equipo").value;
-            var equipoFields = document.getElementById("equipo-fields");
-            
-            if (traeEquipo === "si") {
-                equipoFields.style.display = "block";
-            } else {
-                equipoFields.style.display = "none";
-            }
-        }
-
-        // Función para mostrar u ocultar campos relacionados con si trae vehículo
-        function showVehicleFields() {
-            var traeVehiculo = document.getElementById("trae-vehiculo").value;
-            var vehiculoFields = document.getElementById("vehiculo-fields");
-            var bicycleFields = document.getElementById("bicycle-fields");
-            
-            if (traeVehiculo === "si") {
-                vehiculoFields.style.display = "block";
-                updateBicycleFields();
-            } else {
-                vehiculoFields.style.display = "none";
-                bicycleFields.style.display = "none";
-            }
-        }
-
-        // Función para mostrar u ocultar campos relacionados con el tipo de vehículo (solo cuando es bicicleta)
-        function updateBicycleFields() {
-            var tipoVehiculo = document.getElementById("tipo-vehiculo").value;
-            var bicycleFields = document.getElementById("bicycle-fields");
-            
-            if (tipoVehiculo === "bicicleta") {
-                bicycleFields.style.display = "block";
-            } else {
-                bicycleFields.style.display = "none";
-            }
-        }
-
-        // Llamar a las funciones de inicialización
-        showAdditionalFields();
-        showEquipmentFields();
-        showVehicleFields();
-    </script>
 </body>
 </html>
